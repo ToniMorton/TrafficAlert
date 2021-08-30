@@ -12,6 +12,7 @@ AddEventHandler("TrafficAlert",function(args)
 			message = message .. args[i] .. " "
 		end
 		TriggerServerEvent('SyncTrafficAlert', message)
+		message = "~y~"
 end)
 
 RegisterNetEvent('DisplayTrafficAlert')
